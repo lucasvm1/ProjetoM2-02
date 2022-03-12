@@ -1,0 +1,24 @@
+{
+  "name": "projetoextra-pokedex",
+  "version": "1.0.0",
+  "description": "Projeto MVC de uma Pokedex",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucasvm1/ProjetoExtra-Pokedex.git"
+  },
+  "author": "Lucas Viana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucasvm1/ProjetoExtra-Pokedex/issues"
+  },
+  "homepage": "https://github.com/lucasvm1/ProjetoExtra-Pokedex#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15"
+  }
+}
