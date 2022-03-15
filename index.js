@@ -1,10 +1,12 @@
-const express = require("express");
+const express = require('express');
 const app = express();
+
+const port = 3000
 
 app.get("/", (req, res) => {
   res.render("index");
 });
 
-app.listen(3000, () =>
-  console.log("Servidor ordnado em http://localhost:3000")
+app.listen(port, () =>
+  console.log('Servidor rodando em http://localhost:3000')
 )
