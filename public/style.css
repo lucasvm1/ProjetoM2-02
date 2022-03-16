@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 section#pokedex{
     border-width: solid 1rem;
     border-color: black;
