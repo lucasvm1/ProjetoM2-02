@@ -39,7 +39,7 @@ h2#nome{
 }
 
 p#descricao{
-    word-break: break-all;
+    word-break: normal;
     justify-content: center;
     max-width: 500px;
 }
