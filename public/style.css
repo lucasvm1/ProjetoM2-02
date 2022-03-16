@@ -17,7 +17,9 @@ h1{
 div{
     padding: 2rem;
     display: flex; 
-    align-items: center;   
+    align-items: center;
+    width: 100%; 
+    justify-content: space-around;
 }
 
 div img{
@@ -29,24 +31,22 @@ div img{
 div h2, p{
     padding: 3rem; 
     justify-content: center;
-
-    
 }
 
-h2#nome{
-    justify-content: start;   
-    justify-content: center;
+h2#nome{ 
+    justify-content: start;
+    width: 150px;
 }
 
 p#descricao{
     word-break: break-all;
     justify-content: center;
-    padding: 5rem;
-    border: 1px;
-    border: black;
+    max-width: 500px;
 }
 
 p#tipo{
+    text-align: center;
     justify-content: center;
+    width: 80px;
 }
 
