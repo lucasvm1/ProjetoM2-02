@@ -1,0 +1,47 @@
+section#pokedex{
+    border-width: solid 1rem;
+    border-color: black;
+}
+
+h1{
+    display: flex;
+    justify-content: space-around;
+    font-size: 4rem;
+}
+
+div{
+    padding: 2rem;
+    display: flex; 
+    align-items: center;   
+}
+
+div img{
+    align-items: center; 
+    width: 10%;
+    justify-content: center;
+}
+
+div h2, p{
+    padding: 3rem; 
+    justify-content: center;
+
+    
+}
+
+h2#nome{
+    justify-content: start;   
+    justify-content: center;
+}
+
+p#descricao{
+    word-break: break-all;
+    justify-content: center;
+    padding: 5rem;
+    border: 1px;
+    border: black;
+}
+
+p#tipo{
+    justify-content: center;
+}
+
