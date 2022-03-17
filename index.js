@@ -1,6 +1,9 @@
-const express = require("express");
-const path = require("path")
+import express from "express";
+import path from 'path'
 const app = express();
+
+const __dirname = path.resolve(path.dirname(''))
+
 
 app.set('view engine', 'ejs')
 app.use(express.static(path.join(__dirname, "public")))

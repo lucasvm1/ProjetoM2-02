@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pokédex</title>
+  </head>
 
-    <h1>Pokédex</h1>
-    
-    <section id="pokedex">
+  <body>
 
-    <% pokedex.forEach((pokemon) => { %>
+    <header id="titulo">
+      <h1>Pokédex</h1>
+    </header>
+
+    <main>
+
+      <section id="pokedex">
+
+        <% pokedex.forEach((pokemon) => { %>
         <div>
-            <p><%= pokemon.id %></p>
-            <img src="<%= pokemon.imagem %>" alt="">
-            <h2 id="nome"><%= pokemon.nome %></h2>
-            <p id="descricao"><%= pokemon.descricao %></p>
-            <p id="tipo"><%= pokemon.tipo %></p>
+          <img id="img" src="<%= pokemon.imagem %>" alt="" />
+          <h2 id="nome"><%= pokemon.nome %></h2>
+          <p id="descricao"><%= pokemon.descricao %></p>
+          <p id="tipo"><%= pokemon.tipo %></p>
         </div>
-    <% }) %>
+        <% }) %>
 
-    </section>
-
-</body>
+      </section>
+    </main>
+  </body>
 </html>
