@@ -6,7 +6,9 @@ const __dirname = path.resolve(path.dirname(''))
 
 
 app.set('view engine', 'ejs')
-app.use(express.static(path.join(__dirname, "public")))
+app.use(express.static(path.join(__dirname, "public/css")))
+app.use(express.static(path.join(__dirname, "public/js")))
+app.use(express.static(path.join(__dirname, "public/img")))
 
 const pokedex = [
   {
@@ -40,6 +42,10 @@ const port = 3000;
 
 app.get("/", (req, res) => {
   res.render("index", {pokedex});
+});
+
+app.get("/cadastro", (req, res) => {
+  res.render("cadastro");
 });
 
 app.listen(port, () =>
