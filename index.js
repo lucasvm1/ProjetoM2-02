@@ -4111,9 +4111,7 @@ app.get('/detalhes/:id', (req, res) => {
   res.render('detalhes.ejs', {
       pokemonAtual
   })
-  console.log(req.params.id)
 })
 
 app.listen(port, (req, res) =>{
-  console.log(`Estou rodando na porta ${port}`)
   })
