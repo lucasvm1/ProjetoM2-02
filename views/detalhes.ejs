@@ -36,7 +36,18 @@
     <div class="sub">
         <% pokemonAtual.forEach(element => { %>
             <div class="card-container-sub"> 
-              <div></div>
+              <div class="info-adicional">
+                  <p>Informações Adicionais</p>
+              </div>
+            <div class="infos">
+                <div class="candy"> DOCE: <%= element.candy %>  </div>
+                <div class="fraqueza"> Fraqueza: 
+                    <div><%= element.weaknesses[0] %> </div>
+                    <div><%= element.weaknesses[1] %> </div>
+                    <div><%= element.weaknesses[2] %> </div>
+                    <div><%= element.weaknesses[3] %> </div>
+                    <div><%= element.weaknesses[4] %> </div>
+                </div>
             </div>
         <% }) %>
     </div>
