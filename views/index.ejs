@@ -1,39 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Pokédex</title>
-  </head>
-
-  <body>
-
-    <header id="titulo">
-      <h1>Pokédex</h1>
-    </header>
-
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Pokedex </title>
+    <link rel="stylesheet" href="./css/index.css" type="text/css">
+</head>
+<body>
     <main>
-
-      <section id="pokedex">
-
-        <% pokedex.forEach((pokemon) => { %>
-        <div>
-          <img id="img" src="<%= pokemon.imagem %>" alt="" />
-          <h2 id="nome"><%= pokemon.nome %></h2>
-          <p id="descricao"><%= pokemon.descricao %></p>
-          <p id="tipo"><%= pokemon.tipo %></p>
-        </div>
+        <% pokedex.forEach(element => { %>
+            <a href="/detalhes/<%= element.id %> "> 
+                <div class="card-container"> 
+                    <div class="header-card">
+                        <span class="card-number"> <%= element.num %>  </span>
+                    </div>
+                    <div class="main-card"> 
+                        <img src="<%= element.img %> " alt="<%= element.name %> ">
+                        <div class="card-name"> <%= element.name %>  </div>
+                        <div class="data-card"> 
+                            <span class="width"> <%= element.weight %>  </span>  
+                            <span class="height"> <%= element.height %>  </span>
+                        </div>
+                    </div>
+                    <div class="footer-card"> 
+                    <span class="type1"> <%= element.type[0] %> </span>   
+                    <span class="type2"> <%= element.type[1] %> </span> 
+                    </div>
+                </div>
+        </a>
         <% }) %>
-
-      </section>
-
-      <section id="botao">
-
-        <a href="http://localhost:3000/cadastro"><button>Adicionar um Pokémon!</button></a>
-          
-      </section>
     </main>
-  </body>
+</body>
 </html>
