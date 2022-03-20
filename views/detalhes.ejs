@@ -7,31 +7,43 @@
     <title> Pokedex </title>
     <link rel="stylesheet" href="/css/detalhes.css" type="text/css">
 </head>
+<header class="cabecalho">
+    <h1> <img src="https://pokedex.sleduardo.dev/img/logo.svg" alt="Pokédex"></h1>
+</header>
 <body>
     <main>
+        <div class="principal">
         <% pokemonAtual.forEach(element => { %>
-                <div class="card-container"> 
-                    <div class="header-card">
-                        <span class="card-id"> <%= element.id %>  </span>
-                        <span class="card-number"> <%= element.num %>  </span>
-                    </div>
-                    <div class="main-card"> 
-                        <img src="<%= element.img %> " alt="<%= element.name %> ">
-                        <div class="card-name"> <%= element.name %>  </div>
-                        <div class="data-card"> 
-                            <span class="width"> <%= element.weight %>  </span>  
-                            <span class="height"> <%= element.height %>  </span>
-                        </div>
-                    </div>
-                    <div> 
-                        <%= element.candy %> 
-                    </div>
-                    <div>
-                        <%= element.weaknesses %> 
-                    </div>
-                    <div class="footer-card"> <%= element.type %>  </div>
+            <div class="card-container"> 
+                <div class="header-card">
+                    <span class="card-number"> Nº <%= element.num %>  </span>
                 </div>
+                <div class="main-card"> 
+                    <img src="<%= element.img %> " alt="<%= element.name %> ">
+                    <div class="card-name"> <%= element.name %>  </div>
+                    <div class="data-card"> 
+                        <span class="weight-info"> Peso</span>  
+                        <span class="weight"><%= element.weight %>  </span> 
+                        <span class="height-info"> Altura</span> 
+                        <span class="height"><%= element.height %>  </span>
+                    </div>                    
+                </div>
+                <div class="footer-card"> <%= element.type[0] %>  <%= element.type[1] %> </div>
+            </div>
         <% }) %>
+    </div>
+
+    <div class="sub">
+        <% pokemonAtual.forEach(element => { %>
+            <div class="card-container-sub"> 
+              <div></div>
+            </div>
+        <% }) %>
+    </div>
     </main>
 </body>
+<footer class="rodape"> 
+    <span>GITHUB: LUCASVM1</span>
+    <span>CRIADO POR LUCAS VIANA</span>
+</footer>
 </html>

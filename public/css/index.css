@@ -53,8 +53,8 @@ div.card-container{
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    width: 250px;
-    height: 410px;
+    width: 300px;
+    height: 500px;
     border-radius: 15px;
     box-shadow: 4px 4px 4px 4px #33333340;
 }
@@ -79,6 +79,7 @@ div.header-card{
     font-size: 1.1rem;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
+    margin: -2rem;
 }
 
 div.main-card{
@@ -104,11 +105,31 @@ div.card-name{
 div.data-card{
     display: flex;
     justify-content: space-around;
+    text-align: center;
+    padding-top: 2rem;
     margin: 1rem;
     color: rgb(0, 13, 85);
-    font-weight: bold;
+    font-weight: 500;
     font-size: 1.1rem;
     text-transform: uppercase;
+}
+
+span.height{
+    text-decoration: underline;
+}
+
+span.weight{
+    text-decoration: underline;
+}
+
+span.height-info{
+    color: rgb(0, 13, 85);
+    font-weight: 900;
+}
+
+span.weight-info{
+    color: rgb(0, 13, 85);
+    font-weight: 900;
 }
 
 div.footer-card{

@@ -29,9 +29,12 @@
                         <img src="<%= element.img %> " alt="<%= element.name %> ">
                         <div class="card-name"> <%= element.name %>  </div>
                         <div class="data-card"> 
-                            <span class="width"> <%= element.weight %>  </span>  
-                            <span class="height"> <%= element.height %>  </span>
+                            <span class="weight-info"> Peso</span>  
+                            <span class="weight"><%= element.weight %>  </span> 
+                            <span class="height-info"> Altura</span> 
+                            <span class="height"><%= element.height %>  </span>
                         </div>
+                        
                     </div>
                     <div class="footer-card"> <%= element.type[0] %>  <%= element.type[1] %> </div>
                 </div>
