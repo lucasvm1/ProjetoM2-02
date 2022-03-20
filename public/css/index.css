@@ -4,12 +4,52 @@
     margin: 0;
     padding: 0;
     font-family: lato;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
+
+header{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    background-color: rgb(0, 13, 85);
+    margin-bottom: 0rem;
+}
+
+header h1{
+    font-size: 5rem;
+    color: #f5f5f5;
+}
+
+
+
+div.container-resumo{
+    padding: 0rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    word-wrap: normal;
+    margin-bottom: 5rem;
+   
+}
+
+h2.resumo{
+    padding: 2rem;
+    background-color: rgb(165, 15, 15);
+    color: white;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
 
 main{
     display: flex;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 100px;
     justify-content: center;
     width: 100%;
 }
@@ -24,7 +64,7 @@ div.card-container{
     align-items: center;
     text-align: center;
     width: 250px;
-    height: 400px;
+    height: 410px;
     border-radius: 15px;
     box-shadow: 2px 2px 2px 2px #33333330;
 }
@@ -42,12 +82,13 @@ div.header-card{
     display: flex;
     width: 30%;
     padding: 0.7rem;
-    background-color: white;
+    background-color: rgb(165, 15, 15);
     justify-content: center;
-    color: rgb(2, 26, 161);
+    color: #f5f5f5;
     font-weight: bold;
     font-size: 1.1rem;
-    border-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
 }
 
 div.main-card{
@@ -64,7 +105,7 @@ img{
 
 div.card-name{
     padding: 0.7rem;
-    background-color: rgb(182, 15, 15);
+    background-color: rgb(165, 15, 15);
     font-weight: bold;
     text-transform: uppercase;
     border-radius: 12px;
@@ -74,21 +115,24 @@ div.data-card{
     display: flex;
     justify-content: space-around;
     margin: 1rem;
-    color: rgb(2, 26, 161);
+    color: rgb(0, 13, 85);
     font-weight: bold;
     font-size: 1.1rem;
+    text-transform: uppercase;
 }
 
 div.footer-card{
     display: flex;
-    width: 100%;
-    font-weight: bold;
-    text-transform: uppercase;
-    justify-content: space-evenly;
-}
-
-span.footer-card{
-    display: flex;
     justify-content: space-around;
-
+    margin: 1rem;
+    color: #f5f5f5;
+    font-weight: bold;
+    font-size: 1.1rem;
+    word-spacing: 35px;
+    width: 75%;
+    background-color: rgb(0, 13, 85);
+    padding: 1rem;
+    border-radius: 12px;
+    text-transform: uppercase;
 }
+
