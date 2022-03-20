@@ -39,16 +39,25 @@
               <div class="info-adicional">
                   <p>Informações Adicionais</p>
               </div>
+              <div class="titulo">
+                  <span> DOCE </span>
+                  <span> FRAQUEZAS </span>
+                  <span> KM DE OVOS </span>
+              </div>
             <div class="infos">
-                <div class="candy"> DOCE: <%= element.candy %>  </div>
+                <div class="candy"><%= element.candy %>  </div>
                 <div class="fraqueza">
-                    <div><%= element.weaknesses[0] %> </div>
-                    <div><%= element.weaknesses[1] %> </div>
-                    <div><%= element.weaknesses[2] %> </div>
-                    <div><%= element.weaknesses[3] %> </div>
-                    <div><%= element.weaknesses[4] %> </div>
+                    <ul>  
+                        <div><%= element.weaknesses[0] %> </div>
+                        <div><%= element.weaknesses[1] %> </div>
+                        <div><%= element.weaknesses[2] %> </div>
+                        <div><%= element.weaknesses[3] %> </div>
+                        <div><%= element.weaknesses[4] %> </div>
+                        <div><%= element.weaknesses[5] %> </div>
+                        <div><%= element.weaknesses[6] %> </div>
+                    </ul>
                 </div>
-                <div class="ovo"> KM OVO: <%= element.egg %> </div>
+                <div class="ovo"><%= element.egg %> </div>
             </div>
         <% }) %>
     </div>
