@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lucasvm1/ProjetoExtra-Pokedex.git"
+    "url": "git+https://github.com/lucasvm1/ProjetoHTML-CSS-02.git"
   },
   "author": "Lucas Viana",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/lucasvm1/ProjetoExtra-Pokedex/issues"
+    "url": "https://github.com/lucasvm1/ProjetoHTML-CSS-02/issues"
   },
-  "homepage": "https://github.com/lucasvm1/ProjetoExtra-Pokedex#readme",
+  "homepage": "https://github.com/lucasvm1/ProjetoHTML-CSS-02#readme",
   "dependencies": {
     "ejs": "^3.1.6",
     "express": "^4.17.3"
