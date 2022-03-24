@@ -1,6 +1,6 @@
-# ProjetoHTML-CSS-03
+# ProjetoHTML-CSS-02
 
-## Projeto Catálogo
+## Projeto Pokédex
 
 ## Descrição do Projeto
 
