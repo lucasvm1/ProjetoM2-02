@@ -1,4 +1,4 @@
-# ProjetoHTML-CSS-02
+# ProjetoM2-02
 
 ## Projeto Pokédex
 
